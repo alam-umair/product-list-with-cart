@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Product list with cart</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="dessert-container">
+        <h1 class="dessert-heading">Desserts</h1>
+        <ul class="list-container">
+          <li class="list-item" style="display: none">
+            <div class="top-content">
+              <div class="image-container">
+                <img
+                  src="./assets/images/image-waffle-desktop.jpg"
+                  alt="waffle image"
+                  class="list-image"
+                />
+                <span class="button-container">
+                  <img
+                    src="./assets/images/icon-add-to-cart.svg"
+                    alt="add to cart logo"
+                    class="btn-logo"
+                  />
+                  <button class="addToCart">Add To Cart</button>
+                </span>
+              </div>
+            </div>
+            <div class="bottom-content">
+              <p class="item-category">Waffle</p>
+              <h3 class="item-name">Waffle with Berries</h3>
+              <span class="item-cost">$6.50</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="cart-container">
+        <h2 class="cart-heading">Your Cart (0)</h2>
+        <div class="cart-details">
+          <img
+            src="./assets/images/illustration-empty-cart.svg"
+            alt="empty cart logo"
+            class="empty-logo"
+          />
+          <p class="cart-text">Your added items will appear here.</p>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      <p>&copy; Coded by Umair Alam</p>
+    </div>
+    <script src="./assets/view/cart.js"></script>
+    <script src="./assets/view/dessertPage.js"></script>
+  </body>
+</html>
