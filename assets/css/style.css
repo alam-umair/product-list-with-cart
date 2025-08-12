@@ -66,7 +66,8 @@ ul {
   flex-direction: column;
   background-color: transparent;
 }
-.button-container {
+.button-container,
+.button-container-cart {
   width: 60%;
   background: hsl(0, 0%, 100%);
   border-radius: 5rem;
@@ -155,4 +156,28 @@ ul {
 .empty-logo {
   margin-top: 4rem;
   margin-bottom: 2rem;
+}
+.button-container-cart {
+  background-color: hsl(14, 86%, 42%);
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+}
+.removeOneQuantity,
+.addOneQuantity {
+  background-color: transparent;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 100%;
+  width: 2rem;
+  height: 2rem;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.3rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item-quantity {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
 }

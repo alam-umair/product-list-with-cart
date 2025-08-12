@@ -43,6 +43,11 @@
                   />
                   <button class="addToCart">Add To Cart</button>
                 </span>
+                <span class="button-container-cart">
+                  <button class="removeOneQuantity">-</button>
+                  <span class="item-quantity">0</span>
+                  <button class="addOneQuantity">+</button>
+                </span>
               </div>
             </div>
             <div class="bottom-content">
@@ -55,7 +60,7 @@
       </div>
       <div class="cart-container">
         <h2 class="cart-heading">Your Cart (0)</h2>
-        <div class="cart-details">
+        <div class="cart-details" style="display: none">
           <img
             src="./assets/images/illustration-empty-cart.svg"
             alt="empty cart logo"
@@ -63,12 +68,22 @@
           />
           <p class="cart-text">Your added items will appear here.</p>
         </div>
+        <div class="cart-items">
+          <ul>
+            <li class="cart-list-items">
+              <p class="item-name">Classic Tiramisu</p>
+              <span class="listItem-quantity">1</span>
+              <span class="listItem-cost">$5.00</span>
+              <span class="listItem-totalCost">$5.00</span>
+              <button class="close">X</button>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="attribution">
       <p>&copy; Coded by Umair Alam</p>
     </div>
-    <script src="./assets/view/cart.js"></script>
     <script src="./assets/view/dessertPage.js"></script>
   </body>
 </html>
